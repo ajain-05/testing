@@ -113,78 +113,72 @@ body{
     transform: translateX(5px);
 }
 
-#Menu button{
-    margin-top: 0.5rem;
-    padding: 0.6rem;
-    width: 15vw;
-    background: #1F2A44;
-    color: #FFFFFF;
-    margin-left:1vw ;
-    border: none;
-    border-radius: 6px;
-
-    font-size: 1.2rem;
-    cursor: pointer;
-
-    transition: all 0.3s ease;
-}
-
-#Menu button:hover{
-    background: #2E3A5C;
-}
 
 
-.readMore{
-    margin-top: 1vw;
-    margin-left: 10vw;
-    margin-right: 2VW;
-     background-color: #111827;
-    color: #FFFFFF;
-    border: none;
-    padding: 0.5vw 1vw;
-    border-radius: 0.5vw;
-    font-family: "Poppins", serif;
-    font-size: 1vw;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-decoration: none;
-}
-
-.readMore:hover {
-     background-color: #000000;
-}
-
-#HeroText{
-    margin-top: 15vw;
-    height: 20vh;
+#HeroText,#HeroText2{
+    margin-top: 10vw;
+    height: 25vh;
     width: 62vw;
     margin-left: 20vw;
     padding: 2vw;
     text-align: center;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
-    border-radius: 1vw;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+      background: rgba(255, 255, 255, 0.18);
+        backdrop-filter: blur(12px);
 
+    border-radius: 1vw;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+     box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.35),
+        0 0 35px rgba(255, 183, 77, 0.2);
 }
 
-#HeroText h1{
-    color: #111827;
+#HeroText2{
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(8px);
+    border-radius: 1vw;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    margin-top: 2vw;
+    height: 20vh;
+}
+
+#HeroText h1, #HeroText2 h2{
+    color: #374151;
     font-size: 2vw;
     font-weight: 900;
     margin-bottom: 1vw;
      font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
 }
+#HeroText2 h2{
+    font-family: "Playwrite NO", cursive;
+    color: #111827;
+}
 
-#HeroText p{
+#HeroText h1{
+    font-size: 3vw;
+    animation: blinkText 3s ease-in-out infinite;
+}
+
+@keyframes blinkText{
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+
+#HeroText p, #HeroText2 p{
     color: #374151;
     font-size: 1.2vw;
     font-weight: 700;
     font-family: "Poppins", sans-serif;
 }
-
+#HeroText2 p{
+    color: #EAE6DF;
+}
 #HeroText{
     box-shadow: 
         0 8px 25px rgba(0, 0, 0, 0.3),
@@ -195,6 +189,7 @@ body{
     display: flex;
     justify-content: center;
     gap: 2vw;
+    margin-bottom: 2vw;
 }
 
 /* make anchor behave like button */
@@ -232,7 +227,7 @@ body{
 }
 
 .footer{
-    position: fixed;
+    position: relative;
     left: 0;
     right: 0;
     bottom: 0;
