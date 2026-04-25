@@ -1,0 +1,521 @@
+@media (max-width:951px){
+body{
+    background: url(./image_search_1774254041323.jpg.jpeg);
+    background-size: cover;
+    min-height: 100vh;
+}
+.logo>p{
+    font-size: 3vw;
+}
+.readMore{
+    margin-top: 1vw;
+    margin-left: 8vw;
+    margin-right: 2VW;
+    font-size: 1.5vw;
+}
+
+#HeroText{
+    margin-top: 15vw;
+    height: 35vh;
+    width: 70vw;
+    margin-left: 14vw;
+}
+
+#HeroText h1{
+    font-size: 4.8vw;
+    font-weight: 900;
+    margin-bottom: 1vw;
+     font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+}
+
+#HeroText p{
+    color: #FFFFFF;
+    font-size: 2vw;
+}
+
+#buttons{
+    margin-top: 2vw;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
+
+#buttons button{
+    padding: 0.7vw 1.8vw;
+    font-size: 2vw;
+    border-radius: 0.6vw;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#logIn{
+    background: rgba(255, 255, 255, 0.5);
+}
+
+
+.footer>p{
+    color: #EAE6DF;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+}
+
+
+@media (max-width:769px){
+.head{
+    height: 15vh;
+}
+.logo>p{
+    margin-left: 15vw;
+    font-size: 7vw;
+}
+.nav{
+    display: none;
+}
+
+#hamburger{
+    display: initial;
+    height: 4vw;
+    width: 4vw;
+    margin-right: 5vw;
+}
+
+#cross{
+    position: absolute;
+    right:2vw;
+    top: 0vw;
+    cursor: pointer;
+}
+#Menu{
+    position: absolute;
+    top: 12vw;          
+    right: 2vw;
+    width: 30vw;
+    padding: 1rem;
+    gap: 0.8rem;
+    border-radius: 10px;
+    display: none;
+}
+
+#Menu>a{
+    width: 15vw;
+    font-size: 1.2rem;
+    margin-left:3vw ;
+    padding: 0.5rem 0.8rem;
+}
+
+
+#HeroText{
+    margin-top: 18vw;
+    height: 35vh;
+    width: 85vw;
+    margin-left: 6vw;
+    padding: 1vw;
+    overflow: hidden;
+    /* background-color: red; */
+}
+
+#HeroText h1{
+    font-size: 6vw;
+    font-weight: 900;
+    margin-bottom: 1vw;
+     font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+}
+
+#HeroText p{
+    color: #374151;
+    font-size: 3vw;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+}
+
+#buttons{
+    margin-top: 5vw;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
+
+/* make anchor behave like button */
+#buttons a{
+    font-size: 3vw;
+    border-radius: 0.6vw;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom:5vw;
+    margin-top: 2vw;
+}
+
+#Reg{
+    background: #111827;
+    color: #FFFFFF;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+#Reg:hover{
+    background: #000000;
+    transform: translateY(-2px);
+}
+
+#logIn{
+    background: rgba(255, 255, 255, 0.2);
+    color: #c2c5ca;
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+#logIn:hover{
+    background: rgba(255, 255, 255, 0.35);
+    transform: translateY(-2px);
+}
+
+.footer{
+    position:absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(10, 15, 28, 0.75);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+.footer>p{
+    color: #EAE6DF;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+.footer>p>a{
+    text-decoration: none;
+    font-weight: 900;
+    margin-left: 2rem;
+    color: #B8B3A9;
+    transition: color 0.3s ease;
+}
+.footer > p > a:hover {
+    color: #FFC857;
+}
+.footer > p > a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background: #FFC857;
+    transition: width 0.3s ease;
+}
+
+.footer > p > a:hover::after{
+    width: 100%;
+}
+}
+
+@media (max-width:429px){
+
+.head{
+    height: 10vh;
+}
+.logo>p{
+    margin-left: 15vw;
+    font-size: 7vw;
+}
+
+#hamburger{
+    display: initial;
+    height: 4vw;
+    width: 4vw;
+    margin-right: 5vw;
+}
+
+#cross{
+    position: absolute;
+    right:2vw;
+    top: 0vw;
+    cursor: pointer;
+}
+#Menu{
+    position: absolute;
+    top: 15vw;          
+    right: 3vw;
+    width: 50vw;
+    padding: 1rem;
+    gap: 0.8rem;
+    border-radius: 10px;
+    display: none;
+}
+
+#Menu>a{
+    width: 30vw;
+    font-size: 1.2rem;
+    margin-left:3vw ;
+    padding: 0.5rem 0.8rem;
+}
+
+
+#HeroText{
+    margin-top: 20vw;
+    height: 40vh;
+    width: 85vw;
+    margin-left: 6vw;
+    padding: 2vw;
+    /* background-color: red; */
+}
+
+#HeroText h1{
+    font-size:8vw;
+    font-weight: 900;
+    margin-bottom: 1vw;
+     font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+}
+
+#HeroText p{
+    color: #374151;
+    font-size: 5vw;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+}
+
+#buttons{
+    margin-top: 5vw;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
+
+/* make anchor behave like button */
+#buttons a{
+    font-size: 6vw;
+    border-radius: 0.6vw;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom:5vw;
+    margin-top: 2vw;
+}
+
+#Reg{
+    background: #111827;
+    color: #FFFFFF;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+#Reg:hover{
+    background: #000000;
+    transform: translateY(-2px);
+}
+
+#logIn{
+    background: rgba(255, 255, 255, 0.2);
+    color: #c2c5ca;
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+#logIn:hover{
+    background: rgba(255, 255, 255, 0.35);
+    transform: translateY(-2px);
+}
+
+.footer{
+    position:absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(10, 15, 28, 0.75);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+.footer>p{
+    color: #EAE6DF;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+.footer>p>a{
+    text-decoration: none;
+    font-weight: 900;
+    margin-left: 2rem;
+    color: #B8B3A9;
+    transition: color 0.3s ease;
+}
+.footer > p > a:hover {
+    color: #FFC857;
+}
+.footer > p > a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background: #FFC857;
+    transition: width 0.3s ease;
+}
+
+.footer > p > a:hover::after{
+    width: 100%;
+}
+
+}
+
+@media (max-width:400px){
+
+.head{
+    height: 8vh;
+}
+.logo>p{
+    margin-left: 15vw;
+    font-size: 7vw;
+}
+
+#hamburger{
+    display: initial;
+    height: 4vw;
+    width: 4vw;
+    margin-right: 5vw;
+}
+
+#cross{
+    position: absolute;
+    right:2vw;
+    top: 0vw;
+    cursor: pointer;
+}
+#Menu{
+    position: absolute;
+    top: 15vw;          
+    right: 3vw;
+    width: 50vw;
+    padding: 1rem;
+    gap: 0.8rem;
+    border-radius: 10px;
+    display: none;
+}
+
+#Menu>a{
+    width: 30vw;
+    font-size: 1.2rem;
+    margin-left:3vw ;
+    padding: 0.5rem 0.8rem;
+}
+
+
+#HeroText{
+    margin-top: 20vw;
+    height: 50vh;
+    width: 85vw;
+    margin-left: 6vw;
+    padding: 2vw;
+    /* background-color: red; */
+}
+
+#HeroText h1{
+    font-size: 10vw;
+    font-weight: 900;
+    margin-bottom: 1vw;
+     font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+}
+
+#HeroText p{
+    color: #374151;
+    font-size: 5vw;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+}
+
+#buttons{
+    margin-top: 5vw;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
+
+/* make anchor behave like button */
+#buttons a{
+    font-size: 6vw;
+    border-radius: 0.6vw;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom:5vw;
+    margin-top: 2vw;
+}
+
+#Reg{
+    background: #111827;
+    color: #FFFFFF;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+#Reg:hover{
+    background: #000000;
+    transform: translateY(-2px);
+}
+
+#logIn{
+    background: rgba(255, 255, 255, 0.2);
+    color: #c2c5ca;
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+#logIn:hover{
+    background: rgba(255, 255, 255, 0.35);
+    transform: translateY(-2px);
+}
+
+.footer{
+    position:absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(10, 15, 28, 0.75);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+.footer>p{
+    color: #EAE6DF;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+.footer>p>a{
+    text-decoration: none;
+    font-weight: 900;
+    margin-left: 2rem;
+    color: #B8B3A9;
+    transition: color 0.3s ease;
+}
+.footer > p > a:hover {
+    color: #FFC857;
+}
+.footer > p > a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background: #FFC857;
+    transition: width 0.3s ease;
+}
+
+.footer > p > a:hover::after{
+    width: 100%;
+}
+
+}
+
