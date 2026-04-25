@@ -1,0 +1,276 @@
+*{
+    overflow-x: hidden;
+}
+
+body{
+    /* background-color: #2D2D2A; */
+    background: url(./image_search_1774254041323.jpg.jpeg);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: #E5DCC5; */
+     color: #EAE6DF;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: cover;
+}
+
+.head{
+    height: 8vw;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #4C4C47; */
+    position: fixed;
+    z-index: 2;
+    overflow: hidden;
+    /* background: rgba(255, 255, 255, 0.28);
+    backdrop-filter: blur(12px); */
+     background: rgba(255, 255, 255, 0.22);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+.logo>p{
+    font-size: 3vw;
+    font-family: "Kaushan Script", serif;
+    font-weight: 400;
+    padding: 1vw;
+    /* color: #E5DCC5;
+    text-shadow: 1px 1px #2D2D2A, 2px 2px #2D2D2A;  */
+     color: #111827; /* deep charcoal */
+    text-shadow: none;
+}
+.nav>a{
+    margin: 1vw;
+    font-size: 2vw;
+    text-decoration: none;
+    font-family: "Poppins", serif;
+     color: #1F2937;
+    border-bottom: 3px solid transparent;
+    transition: color 0.5s ease;
+}
+.nav > a:hover {
+    /* color: #C14953; */
+    color: #000000;
+    border-bottom: 3px solid #FFB347; /* warm glow match */
+}
+.nav{
+    overflow: hidden;
+}
+#hamburger{
+    height: 2vw;
+    width: 2vw;
+    margin-right: 2vw;
+    display: none;
+    cursor: pointer;
+}
+#cross{
+    position: absolute;
+    right:2vw;
+    top: 0vw;
+    cursor: pointer;
+}
+#Menu{
+    position: absolute;
+    top: 8vw;          
+    right: 3vw;
+    width: 20vw;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    background: rgba(10, 15, 28, 0.9);
+    backdrop-filter: blur(10px);
+
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    z-index: 100;
+    display: none;
+}
+
+#Menu>a{
+    width: 10vw;
+    text-decoration: none;
+    color: #EAE6DF;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    margin-left:2.5vw ;
+    padding: 0.5rem 0.8rem;
+    border-radius: 6px;
+    
+    transition: all 0.3s ease;
+}
+
+#Menu>a:hover{
+    background: rgba(255, 255, 255, 0.08);
+    color: #FFD166;
+    transform: translateX(5px);
+}
+
+#Menu button{
+    margin-top: 0.5rem;
+    padding: 0.6rem;
+    width: 15vw;
+    background: #1F2A44;
+    color: #FFFFFF;
+    margin-left:1vw ;
+    border: none;
+    border-radius: 6px;
+
+    font-size: 1.2rem;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+#Menu button:hover{
+    background: #2E3A5C;
+}
+
+
+.readMore{
+    margin-top: 1vw;
+    margin-left: 10vw;
+    margin-right: 2VW;
+     background-color: #111827;
+    color: #FFFFFF;
+    border: none;
+    padding: 0.5vw 1vw;
+    border-radius: 0.5vw;
+    font-family: "Poppins", serif;
+    font-size: 1vw;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.readMore:hover {
+     background-color: #000000;
+}
+
+#HeroText{
+    margin-top: 15vw;
+    height: 20vh;
+    width: 62vw;
+    margin-left: 20vw;
+    padding: 2vw;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 1vw;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+
+}
+
+#HeroText h1{
+    color: #111827;
+    font-size: 2vw;
+    font-weight: 900;
+    margin-bottom: 1vw;
+     font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+}
+
+#HeroText p{
+    color: #374151;
+    font-size: 1.2vw;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+}
+
+#HeroText{
+    box-shadow: 
+        0 8px 25px rgba(0, 0, 0, 0.3),
+        0 0 30px rgba(255, 183, 77, 0.15);
+}
+#buttons{
+    margin-top: 2vw;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
+
+/* make anchor behave like button */
+#buttons a{
+    display: inline-block;
+    padding: 0.7vw 1.8vw;
+    font-size: 1.1vw;
+    border-radius: 0.6vw;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#Reg{
+    background: #111827;
+    color: #FFFFFF;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+#Reg:hover{
+    background: #000000;
+    transform: translateY(-2px);
+}
+
+#logIn{
+    background: rgba(255, 255, 255, 0.2);
+    color: #111827;
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+#logIn:hover{
+    background: rgba(255, 255, 255, 0.35);
+    transform: translateY(-2px);
+}
+
+.footer{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(10, 15, 28, 0.75);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+.footer>p{
+    color: #EAE6DF;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+.footer>p>a{
+    text-decoration: none;
+    font-weight: 900;
+    margin-left: 2rem;
+    color: #B8B3A9;
+    transition: color 0.3s ease;
+}
+.footer > p > a:hover {
+    color: #FFC857;
+}
+.footer > p > a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background: #FFC857;
+    transition: width 0.3s ease;
+}
+
+.footer > p > a:hover::after{
+    width: 100%;
+}
+
+
